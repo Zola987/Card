@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link s rel="stylesheet" href="dist/css/main.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <title>Card</title>
   </head>
@@ -12,43 +12,51 @@
     <main>
       <section class="center">
         <!-- Circles-->
-        <article class="background">
-          <img class="back1" src="images/bg-pattern-top.svg" alt="" />
-          <img class="back2" src="images/bg-pattern-bottom.svg" alt="" />
-        </article>
+        <div class="background">
+          <img
+            class="back1"
+            src="dist/images/bg-pattern-top.svg"
+            alt="picture-top"
+          />
+          <img
+            class="back2"
+            src="dist/images/bg-pattern-bottom.svg"
+            alt="picture-bottom"
+          />
+        </div>
 
         <!-- Card -->
         <article class="card">
           <!-- Card-Head -->
-          <article class="card-head"></article>
+          <div class="card-head"></div>
 
           <!-- Card-Info -->
-          <article class="card-info">
-            <article class="img">
-              <img src="images/image-victor.jpg" alt="" />
-            </article>
+          <div class="card-info">
+            <div class="img">
+              <img src="dist/images/image-victor.jpg" alt="picture-profile" />
+            </div>
             <h2 class="name">
               Victor Crest
               <span class="age">26</span>
             </h2>
-            <article class="city">London</article>
-          </article>
+            <div class="city">London</div>
+          </div>
 
           <!-- Card-Footer -->
-          <article class="card-footer">
-            <article class="item">
+          <div class="card-footer">
+            <div class="item">
               <h4 class="value">80K</h4>
               <h5 class="meta">Followers</h5>
-            </article>
-            <article class="item">
+            </div>
+            <div class="item">
               <h4 class="value">803K</h4>
               <h5 class="meta">Likes</h5>
-            </article>
-            <article class="item">
+            </div>
+            <div class="item">
               <h4 class="value">1.4K</h4>
               <h5 class="meta">Photos</h5>
-            </article>
-          </article>
+            </div>
+          </div>
         </article>
       </section>
     </main>
