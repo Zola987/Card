@@ -6,143 +6,164 @@ $Dark-grayish-blue: hsl(227, 10%, 46%);
 $Dark-gray: hsl(0, 0%, 95%);
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 18px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
 }
 // #f0f0f0 #f2f2f2`
 body {
-    font-family: 'Kumbh Sans', sans-serif;
-    background-color: $Dark-cyan;
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: $Dark-cyan;
 }
 
 .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: $Dark-cyan;
+  height: 100vh;
+  overflow: hidden;
+
+  .background img {
+    position: absolute;
+
+    height: auto;
+  }
+
+  .back1 {
+    width: 1000px;
+    top: -280px;
+    left: 170px;
+  }
+
+  .back2 {
+    width: 875px;
+    bottom: -340px;
+    right: 130px;
+  }
+
+  .card {
+    color: $Very-dark-desaturated-blue;
+    position: relative;
+    width: 350px;
+    height: 375px;
+
+    border-radius: 20px;
+    background: #fff;
+    overflow: hidden;
+    text-align: center;
+    z-index: 1000;
+  }
+
+  .card-head {
+    background-image: url(../images/bg-pattern-card.svg);
+    background-size: cover;
+    height: 140px;
+  }
+
+  .card-info {
+    padding: 5px 30px;
+    height: 145px;
+
+    .img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      overflow: hidden;
+      margin: -55px auto 30px auto;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .name {
+      margin-top: -10px;
+      font-size: 1rem;
+      margin-bottom: 12px;
+    }
+
+    .age {
+      font-weight: 400;
+      margin-left: 5px;
+    }
+
+    .city {
+      font-weight: 400;
+      font-size: 0.9rem;
+      margin-bottom: 30px;
+    }
+
+    .age,
+    .city,
+    .meta {
+      // font-weight: 400;
+      color: $Dark-grayish-blue;
+    }
+  }
+
+  .card-footer {
+    border-top: 1px solid $Dark-gray;
     display: flex;
     justify-content: center;
-    align-items: center;
-    position: relative;
-    background: $Dark-cyan;
-    height: 100vh;
-    overflow: hidden;
+    height: 90px;
+    margin-top: 20px;
+    // padding: 0 30px;
 
-    .background img {
-        position: absolute;
-        width: 800px;
-        height: auto;
+    .item {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
     }
 
-    .back1 {
-        top: -280px;
-        left: 170px;
+    .value {
+      font-size: 0.8rem;
+      font-weight: 700;
+      opacity: 1;
     }
 
-    .back2 {
-        bottom: -340px;
-        right: 130px;
+    .meta {
+      font-weight: 400;
+      font-size: 0.6rem;
+      opacity: 0.4;
+      letter-spacing: 1px;
     }
-
-    .card {
-        color: $Very-dark-desaturated-blue;
-        position: relative;
-        width: 350px;
-        border-radius: 20px;
-        background: #fff;
-        overflow: hidden;
-        text-align: center;
-        z-index: 1000;
-    }
-
-    .card-head {
-        background-image: url(../images/bg-pattern-card.svg);
-        background-size: cover;
-        height: 150px;
-    }
-
-    .card-info {
-        padding: 0 20px 25px;
-
-        .img {
-            width: 110px;
-            height: 110px;
-            border-radius: 50%;
-            border: 5px solid #fff;
-            overflow: hidden;
-            margin: -55px auto 30px auto;
-        }
-
-        img {
-            display: block;
-            width: 100%;
-            height: auto;
-        }
-
-        .name {
-            margin-top: -10px;
-            font-size: 1rem;
-            margin-bottom: 12px;
-        }
-
-        .age {
-            font-weight: 400;
-            margin-left: 5px;
-        }
-
-        .city {
-            font-weight: 400;
-            font-size: 0.9rem;
-        }
-
-        .age,
-        .city,
-        .meta {
-            // font-weight: 400;
-            color: $Dark-grayish-blue;
-        }
-    }
-
-    .card-footer {
-        border-top: 1px solid $Dark-gray;
-        display: flex;
-        padding: 0 30px;
-
-        .item {
-            flex: 1;
-            height: 100px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .value {
-            font-size: 1rem;
-            font-weight: 700;
-            opacity: 1;
-            margin-bottom: 6px;
-        }
-
-        .meta {
-            font-weight: 400;
-            font-size: 0.6rem;
-            opacity: 0.4;
-            letter-spacing: 1px;
-        }
-    }
+  }
 }
 
 /* Responsive */
 
 @media (max-width: 375px) {
-    .center {
-        .back1 {
-            top: -500px;
-            left: -615px;
-        }
-
-        .back2 {
-            bottom: -521px;
-            right: -580px;
-        }
+  .center {
+    .back1 {
+      top: -500px;
+      left: -615px;
     }
+
+    .back2 {
+      bottom: -521px;
+      right: -580px;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .center {
+    .back1 {
+      top: -513px;
+      left: -309px;
+    }
+
+    .back2 {
+      bottom: -521px;
+      right: -169px;
+    }
+  }
 }

@@ -19,18 +19,20 @@ body {
   overflow: hidden; }
   .center .background img {
     position: absolute;
-    width: 800px;
     height: auto; }
   .center .back1 {
+    width: 1000px;
     top: -280px;
     left: 170px; }
   .center .back2 {
+    width: 875px;
     bottom: -340px;
     right: 130px; }
   .center .card {
     color: #2d3248;
     position: relative;
     width: 350px;
+    height: 375px;
     border-radius: 20px;
     background: #fff;
     overflow: hidden;
@@ -39,9 +41,10 @@ body {
   .center .card-head {
     background-image: url(../images/bg-pattern-card.svg);
     background-size: cover;
-    height: 150px; }
+    height: 140px; }
   .center .card-info {
-    padding: 0 20px 25px; }
+    padding: 5px 30px;
+    height: 145px; }
     .center .card-info .img {
       width: 110px;
       height: 110px;
@@ -62,7 +65,8 @@ body {
       margin-left: 5px; }
     .center .card-info .city {
       font-weight: 400;
-      font-size: 0.9rem; }
+      font-size: 0.9rem;
+      margin-bottom: 30px; }
     .center .card-info .age,
     .center .card-info .city,
     .center .card-info .meta {
@@ -70,19 +74,19 @@ body {
   .center .card-footer {
     border-top: 1px solid #f2f2f2;
     display: flex;
-    padding: 0 30px; }
+    justify-content: center;
+    height: 90px;
+    margin-top: 20px; }
     .center .card-footer .item {
       flex: 1;
-      height: 100px;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center; }
+      align-items: center;
+      padding-top: 20px; }
     .center .card-footer .value {
-      font-size: 1rem;
+      font-size: 0.8rem;
       font-weight: 700;
-      opacity: 1;
-      margin-bottom: 6px; }
+      opacity: 1; }
     .center .card-footer .meta {
       font-weight: 400;
       font-size: 0.6rem;
@@ -97,3 +101,11 @@ body {
   .center .back2 {
     bottom: -521px;
     right: -580px; } }
+
+@media (max-width: 1440px) {
+  .center .back1 {
+    top: -513px;
+    left: -309px; }
+  .center .back2 {
+    bottom: -521px;
+    right: -169px; } }
