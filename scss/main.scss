@@ -11,7 +11,7 @@ $Dark-gray: hsl(0, 0%, 95%);
   box-sizing: border-box;
   font-size: 18px;
 }
-// #f0f0f0 #f2f2f2`
+
 body {
   font-family: 'Kumbh Sans', sans-serif;
   background-color: $Dark-cyan;
@@ -34,14 +34,14 @@ body {
 
   .back1 {
     width: 1000px;
-    top: -280px;
-    left: 170px;
+    top: -400px;
+    left: -50px;
   }
 
   .back2 {
     width: 875px;
-    bottom: -340px;
-    right: 130px;
+    bottom: -400px;
+    right: 90px;
   }
 
   .card {
@@ -55,6 +55,7 @@ body {
     overflow: hidden;
     text-align: center;
     z-index: 1000;
+    box-shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.3);
   }
 
   .card-head {
@@ -66,6 +67,7 @@ body {
   .card-info {
     padding: 5px 30px;
     height: 145px;
+    border-bottom: 1px solid $Dark-gray;
 
     .img {
       width: 110px;
@@ -85,74 +87,62 @@ body {
     .name {
       margin-top: -10px;
       font-size: 1rem;
-      margin-bottom: 12px;
+      margin-bottom: 6px;
     }
 
     .age {
+      color: $Dark-grayish-blue;
       font-weight: 400;
       margin-left: 5px;
     }
 
     .city {
-      font-weight: 400;
-      font-size: 0.9rem;
-      margin-bottom: 30px;
-    }
-
-    .age,
-    .city,
-    .meta {
-      // font-weight: 400;
       color: $Dark-grayish-blue;
+      font-weight: 400;
+      font-size: 0.75rem;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
     }
   }
 
   .card-footer {
-    border-top: 1px solid $Dark-gray;
     display: flex;
     justify-content: center;
     height: 90px;
-    margin-top: 20px;
-    // padding: 0 30px;
+    margin-top: 25px;
 
     .item {
       flex: 1;
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding-top: 20px;
+    }
+
+    .item:first-child {
+      margin-left: 25px;
+    }
+
+    .item:last-child {
+      margin-right: 25px;
     }
 
     .value {
-      font-size: 0.8rem;
+      font-size: 1rem;
       font-weight: 700;
-      opacity: 1;
     }
 
     .meta {
+      color: $Very-dark-desaturated-blue;
+      margin-top: 5px;
       font-weight: 400;
-      font-size: 0.6rem;
-      opacity: 0.4;
-      letter-spacing: 1px;
+      font-size: 0.55rem;
+      opacity: 0.6;
+      letter-spacing: 1.5px;
     }
   }
 }
 
 /* Responsive */
-
-@media (max-width: 375px) {
-  .center {
-    .back1 {
-      top: -500px;
-      left: -615px;
-    }
-
-    .back2 {
-      bottom: -521px;
-      right: -580px;
-    }
-  }
-}
 
 @media (max-width: 1440px) {
   .center {
@@ -164,6 +154,24 @@ body {
     .back2 {
       bottom: -521px;
       right: -169px;
+    }
+  }
+}
+@media (max-width: 375px) {
+  .center {
+    .card {
+      width: 325px;
+    }
+    .back1 {
+      width: 800px;
+      top: -480px;
+      left: -589px;
+    }
+
+    .back2 {
+      width: 800px;
+      bottom: -462px;
+      right: -603px;
     }
   }
 }

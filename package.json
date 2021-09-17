@@ -1,31 +1,40 @@
 {
-    "name": "new",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "sass": "node-sass -w scss/ -o dist/css/ --reucrsive"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Zola987/card.git"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/Zola987/card/issues"
-    },
-    "homepage": "https://github.com/Zola987/card#readme",
-    "devDependencies": {
-        "eslint": "^7.32.0",
-        "eslint-config-node": "^4.1.0",
-        "eslint-config-prettier": "^8.3.0",
-        "eslint-plugin-node": "^11.1.0",
-        "eslint-plugin-prettier": "^4.0.0",
-        "prettier": "^2.4.0"
-    },
-    "dependencies": {
-        "node-sass": "^6.0.1"
-    }
+  "name": "new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --reucrsive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zola987/card.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zola987/card/issues"
+  },
+  "homepage": "https://github.com/Zola987/card#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.0"
+  },
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "tabWidth": 2,
+    "semi": true,
+    "printWidth": 80,
+    "useTabs": false,
+    "trailingComma": "all",
+    "bracketSpacing": false
+  }
 }
